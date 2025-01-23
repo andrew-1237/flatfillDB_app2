@@ -51,7 +51,7 @@ for rec in records:
 
 pt = st.text_input("do you want to deit a user")
 if pt == "yes":
-    usersdelat = st.int_input("what user do you want to delete")
+    usersdelat = st.number_input("what user do you want to delete")
     db.delete_record(usersdelat)
     st.write("Updated records:")
     records = db.read_records()
