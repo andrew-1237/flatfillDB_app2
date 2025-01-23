@@ -54,10 +54,10 @@ for rec in records:
 deleter = st.radio("Please choose Login or New User",
     [":rainbow[yes]", ":rainbow[no]"])
     if deleter == ":rainbow[yes]":
-        usersdelat = st.number_input("what user do you want to delete")
-        db.delete_record(usersdelat)
-        st.write("Updated records:")
-        records = db.read_records()
+    usersdelat = st.number_input("what user do you want to delete")
+    db.delete_record(usersdelat)
+    st.write("Updated records:")
+    records = db.read_records()
     for rec in records:
-        st.write(rec)
+    st.write(rec)
 
