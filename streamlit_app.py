@@ -51,7 +51,7 @@ for rec in records:
 
 
 
-deleter = st.radio("Please choose Login or New User", [":rainbow[yes]", ":rainbow[no]"])
+deleter = st.radio("yes or no", [":rainbow[yes]", ":rainbow[no]"])
 if deleter == ":rainbow[yes]":
     usersdelat = st.number_input("what user do you want to delete")
     db.delete_record(usersdelat)
