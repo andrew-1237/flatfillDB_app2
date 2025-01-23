@@ -49,12 +49,15 @@ st.write("Records in the database:")
 for rec in records:
     st.write(rec)
 
-deleter = st.text_input("do you want to delete a user").lower
-if deleter == "yes":
-    usersdelat = st.number_input("what user do you want to delete")
-    db.delete_record(usersdelat)
-    st.write("Updated records:")
-    records = db.read_records()
-for rec in records:
-    st.write(rec)
+
+
+deleter = st.radio("Please choose Login or New User",
+    [":rainbow[yes]", ":rainbow[no]"])
+    if deleter == ":rainbow[yes]":
+        usersdelat = st.number_input("what user do you want to delete")
+        db.delete_record(usersdelat)
+        st.write("Updated records:")
+        records = db.read_records()
+    for rec in records:
+        st.write(rec)
 
