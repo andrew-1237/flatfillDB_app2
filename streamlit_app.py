@@ -58,5 +58,5 @@ if deleter == ":rainbow[yes]":
     st.write("Updated records:")
     records = db.read_records()
     for rec in records:
-    st.write(rec)
+        st.write(rec)
 
