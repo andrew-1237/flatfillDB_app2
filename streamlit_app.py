@@ -1,7 +1,8 @@
 import streamlit as st
 
 st.title("🎈 My new app")
-pt = ""
+
+
 class Record:
     def __init__(self,id,forename,surname,AGE,email):
         self.id = id
