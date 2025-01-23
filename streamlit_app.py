@@ -37,7 +37,7 @@ class FlatFileDB:
 db = FlatFileDB("database.txt")
 
 
-record1 = Record(1, "Alice", "Smith", 30, "alice@example.com")
+record1 = Record(1.00, "Alice", "Smith", 30, "alice@example.com")
 record2 = Record(2, "Bob", "Brown", 25, "bob@example.com")
 record3 = Record(3, "dima", "vasalasky", 18, "dima@example.com")
 db.save_record(record1)
